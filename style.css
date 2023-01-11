@@ -1,0 +1,125 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*---HEADER---*/
+
+.header {
+}
+.header-navigation {
+}
+.header-link {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-contacts {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*---HERO---*/
+
+.hero {
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-pretitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background-color: yellowgreen;
+}
+.hero-aftertitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/*---ABOUT---*/
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-image {
+}
+.abut-pretitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.about-aftertitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-aftertitle-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
