@@ -19,10 +19,37 @@ body {
   list-style: none;
   box-sizing: border-box;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+
 /*---HEADER---*/
 
 .header {
-  background-color: #9da4bd;
+  background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-navigation {
 }
@@ -67,7 +94,7 @@ body {
 /*---HERO---*/
 
 .hero {
-  background-color: gold;
+  background-color: grey;
 }
 .hero-list {
 }
@@ -90,6 +117,7 @@ body {
   font-size: 11px;
   line-height: 1.4;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
@@ -98,7 +126,8 @@ body {
   line-height: 1.9;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
-  background-color: yellowgreen;
+
+  margin-bottom: 20px;
 }
 .hero-aftertitle {
   font-size: 18px;
@@ -109,7 +138,9 @@ body {
 
 /*---ABOUT---*/
 .about {
-  background-color: pink;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #ffffff;
 }
 .about-list {
 }
@@ -123,6 +154,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: 20px;
 }
 .about-title {
   font-family: "Raleway";
@@ -131,6 +163,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 20px;
 }
 .about-aftertitle {
   font-weight: 400;
@@ -138,6 +171,7 @@ body {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 .about-aftertitle-text {
   font-weight: 400;
@@ -145,6 +179,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 .about-button {
   font-family: inherit;
@@ -159,7 +194,9 @@ body {
 
 /*---SECTION PRICES 3---*/
 .prices {
-  background-color: cadetblue;
+  background-color: grey;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .prices-pre-title {
   font-weight: 600;
@@ -167,6 +204,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .prices-title {
   font-family: "Raleway";
@@ -176,6 +214,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
+  margin-bottom: 44px;
 }
 .prices-list {
 }
@@ -187,6 +226,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  margin-bottom: 44px;
 }
 .header-button {
   font-family: inherit;
@@ -200,7 +240,9 @@ body {
 /*---SECTION BENEFITS 4---*/
 
 .benefits {
-  background-color: darkorange;
+  background-color #FFFFFF;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
 }
@@ -213,6 +255,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 6px;
 }
 .count-text {
   font-weight: 600;
@@ -227,6 +270,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: 20px;
 }
 .benefits-title {
   font-family: "Raleway";
@@ -235,6 +279,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 20px;
 }
 .benefits-after-title {
   font-size: 18px;
@@ -242,9 +287,12 @@ body {
   letter-spacing: 0.02em;
   color: #555555;
 }
+
 /*---SECTION TEAM 5---*/
 .team {
-  background-color: darkcyan;
+  background-color: #F7F7F7;;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-pre-title {
   font-weight: 600;
@@ -252,6 +300,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: 20px;
 }
 .team-title {
   font-family: "Raleway";
@@ -261,12 +310,14 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 44px;
 }
 .team-list {
 }
 .team-item {
 }
 .team-images {
+  margin-bottom: 30px;
 }
 .team-member {
   font-weight: 400;
@@ -275,6 +326,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 .team-member-skills {
   font-size: 14px;
@@ -285,14 +337,18 @@ body {
 }
 /*---SECTION TEAM PHOTOS 6---*/
 .team-photos {
-  background-color: lightgrey;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color:  #FFFFFF;
 }
 .team-photos-title {
+   margin-bottom: 44px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   text-transform: uppercase;
   color: #303030;
+ 
 }
 .team-photos-list {
 }
@@ -304,20 +360,25 @@ body {
 }
 /*---SECTION BOOKING 7---*/
 .booking {
-  background-color: paleturquoise;
+  padding-top: 130px;
+  padding-bottom: 183px;
+  background-color: #191C26;
 }
 .booking-title {
+  margin-bottom: 44px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
-  background-color: aquamarine;
+
 }
 /*---SECTION CONTACTS 8---*/
 .contacts {
-  background-color: indianred;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: #191C26;
 }
 .contacts-title {
   font-family: "Raleway";
@@ -326,33 +387,38 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
+  margin-bottom: 40px;
 }
 .address {
 }
 .address-list {
 }
 .address-item {
-}
+  margin-bottom: 20px;}
+
 .address-link {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  
 }
 .phone-link {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+
 }
 .email-link {
+  margin-bottom: 70px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   text-decoration-line: underline;
-
   color: #9da4bd;
+
 }
 .working-hours-title {
   font-weight: 600;
@@ -360,6 +426,8 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: var(--first-text-color);
+  margin-bottom: 20px;
+
 }
 .working-schedulle {
   font-size: 18px;
@@ -371,7 +439,9 @@ body {
 /*---FOOTER---*/
 
 .footer {
-  background-color: yellowgreen;
+ background-color: #F7F7F7;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 .footer-text {
   font-weight: 600;
