@@ -13,6 +13,7 @@ body {
 .link {
   text-decoration: none;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -40,24 +41,46 @@ ol {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
   margin: 0 auto;
 }
 
-/*---HEADER---*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------HEADER----------------------------------------*/
 
 .header {
-  background-color: grey;
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
+  outline: 2px solid red;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-right: 32px;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
+
 .header-link {
 }
+
 .header-logo {
+  margin-right: 131px;
 }
 .header-list {
+  display: flex;
+  gap: 30px;
 }
 .header-item {
 }
@@ -74,13 +97,17 @@ ol {
   color: var(--accent-color);
 }
 .header-contacts {
+  margin-right: 43px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--first-text-color);
 }
-.header-button {
+.button {
+  min-width: 160px;
+  height: 40px;
+  background-color: transparent;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -89,15 +116,42 @@ ol {
   text-transform: uppercase;
   color: var(--first-text-color);
   cursor: pointer;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
 }
-
-/*---HERO---*/
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--first-text-color);
+}
+/*------------------------------------HERO----------------------------------------*/
 
 .hero {
-  background-color: grey;
+  outline: 2px solid red;
+}
+
+.hero > .container {
+  display: flex;
+}
+
+.hero-wrap {
+  padding-top: 272px;
+  padding-right: 526px;
+  padding-bottom: 208px;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../image/hero.jpg);
+  background-size: cover;
 }
 .hero-list {
+  width: 100px;
 }
+
 .hero-item {
 }
 .hero-link {
@@ -112,13 +166,23 @@ ol {
 .hero-link:focus {
   color: var(--accent-color);
 }
-.hero-pretitle {
+.pretitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+.pretitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
 .hero-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -134,6 +198,7 @@ ol {
   line-height: 1.8;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 360px;
 }
 
 /*---ABOUT---*/
@@ -141,14 +206,26 @@ ol {
   padding-top: 120px;
   padding-bottom: 120px;
   background: #ffffff;
+  outline: 2px solid red;
 }
 .about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
+}
+
+.about > .container {
+  display: flex;
+  gap: 30px;
 }
 .about-item {
 }
 .about-image {
 }
-.abut-pretitle {
+.about-pretitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
@@ -194,10 +271,22 @@ ol {
 
 /*---SECTION PRICES 3---*/
 .prices {
-  background-color: grey;
+  background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    ),
+    url(../image/prices.jpg);
   padding-top: 120px;
   padding-bottom: 120px;
+  outline: 2px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
 .prices-pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -217,36 +306,96 @@ ol {
   margin-bottom: 44px;
 }
 .prices-list {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+  width: calc((100% - 30px) / 2);
+}
+
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+}
+
+.prices-item + .prices-item {
+  margin-top: 20px;
 }
 .prices-item-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  margin-bottom: 44px;
 }
-.header-button {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--first-text-color);
+
+.prices-item-text:first-child {
+  order: -1;
+}
+
+.prices-btn {
+  display: block;
+  margin: 0 auto;
 }
 /*---SECTION BENEFITS 4---*/
 
 .benefits {
-  background-color #FFFFFF;
+  background-color: #ffffff;
   padding-top: 120px;
   padding-bottom: 120px;
+  outline: 2px solid red;
+}
+.benefits > .container {
+  display: flex;
+  gap: 130px;
+  padding-left: 85px;
+}
+.benefits-wrap {
 }
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
 }
 .benefits-item {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  width: 170px;
+  height: 130px;
+  background-color: #f7f7f7;
+  text-align: center;
+  display: block;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 .count {
   font-weight: 700;
@@ -256,6 +405,7 @@ ol {
   letter-spacing: 0.05em;
   color: #303030;
   margin-bottom: 6px;
+  text-align: center;
 }
 .count-text {
   font-weight: 600;
@@ -264,6 +414,7 @@ ol {
   text-align: center;
   color: #303030;
 }
+
 .befenits-pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -280,19 +431,22 @@ ol {
   letter-spacing: 0.05em;
   color: #303030;
   margin-bottom: 20px;
+  width: 430px;
 }
 .benefits-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  width: 500px;
 }
 
 /*---SECTION TEAM 5---*/
 .team {
-  background-color: #F7F7F7;;
+  background-color: #f7f7f7;
   padding-top: 120px;
   padding-bottom: 120px;
+  outline: 2px solid red;
 }
 .team-pre-title {
   font-weight: 600;
@@ -313,10 +467,15 @@ ol {
   margin-bottom: 44px;
 }
 .team-list {
+  display: flex;
+  gap: 30px;
 }
 .team-item {
+  width: calc((100% - 30) / 3);
 }
 .team-images {
+  width: 370px;
+  height: 346px;
   margin-bottom: 30px;
 }
 .team-member {
@@ -334,25 +493,56 @@ ol {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms linear;
+}
+
+.barbers-soc-link:hover,
+.barbers-soc-link:focus {
+  fill: var(--accent-color);
 }
 /*---SECTION TEAM PHOTOS 6---*/
 .team-photos {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color:  #FFFFFF;
+  background-color: #ffffff;
+  outline: 2px solid red;
 }
 .team-photos-title {
-   margin-bottom: 44px;
+  margin-bottom: 44px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   text-transform: uppercase;
   color: #303030;
- 
 }
 .team-photos-list {
+  display: flex;
+  gap: 30px;
 }
 .team-photos-item {
+  width: calc ((100% - 90)/4);
 }
 .team-photos-omages {
 }
@@ -362,7 +552,8 @@ ol {
 .booking {
   padding-top: 130px;
   padding-bottom: 183px;
-  background-color: #191C26;
+  background-color: #191c26;
+  outline: 2px solid red;
 }
 .booking-title {
   margin-bottom: 44px;
@@ -372,13 +563,13 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
-
 }
 /*---SECTION CONTACTS 8---*/
 .contacts {
   padding-top: 130px;
   padding-bottom: 120px;
-  background-color: #191C26;
+  background-color: #191c26;
+  outline: 2px solid red;
 }
 .contacts-title {
   font-family: "Raleway";
@@ -394,7 +585,8 @@ ol {
 .address-list {
 }
 .address-item {
-  margin-bottom: 20px;}
+  margin-bottom: 20px;
+}
 
 .address-link {
   font-weight: 700;
@@ -402,14 +594,12 @@ ol {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  
 }
 .phone-link {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-
 }
 .email-link {
   margin-bottom: 70px;
@@ -418,7 +608,6 @@ ol {
   letter-spacing: 0.02em;
   text-decoration-line: underline;
   color: #9da4bd;
-
 }
 .working-hours-title {
   font-weight: 600;
@@ -427,7 +616,6 @@ ol {
   text-transform: uppercase;
   color: var(--first-text-color);
   margin-bottom: 20px;
-
 }
 .working-schedulle {
   font-size: 18px;
@@ -439,9 +627,10 @@ ol {
 /*---FOOTER---*/
 
 .footer {
- background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding-top: 56px;
   padding-bottom: 56px;
+  outline: 2px solid red;
 }
 .footer-text {
   font-weight: 600;

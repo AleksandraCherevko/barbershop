@@ -18,17 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
+  
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--HEADER-->
+    <!--HEADER NAVIGATION-->
     <header class="header">
-      <!--HEADER NAVIGATION-->
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
-          <a class="header-link link" href="" class="header-logo link">
-            <img src="./image/Logo.svg" alt="site logo"
-          /></a>
+          <a href="" class="header-logo">
+            <img src="./image/Logo.svg" alt="logo" />
+          </a>
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-item-link link" href="">About</a>
@@ -48,7 +48,7 @@
         <a class="header-contacts link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="header-button">Online-booking</button>
+        <button type="button" class="button">Online-booking</button>
       </div>
     </header>
     <main>
@@ -75,12 +75,14 @@
               >
             </li>
           </ul>
-          <p class="hero-pretitle">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-aftertitle">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
-          </p>
+          <div class="hero-wrap">
+            <p class="hero-pretitle pretitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-aftertitle">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
       <!--SECTION ABOUT 2-->
@@ -106,72 +108,76 @@
               />
             </li>
           </ul>
-          <p class="abut-pretitle">About</p>
-          <h2 class="about-title">Best Barbershop in your city</h2>
-          <p class="about-aftertitle">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-aftertitle-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button
-            class="about-button"
-            type="button"
-            targer="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Online-booking
-          </button>
+          <div class="about-wrap">
+            <p class="about-pretitle pretitle">About</p>
+            <h2 class="about-title">Best Barbershop in your city</h2>
+            <p class="about-aftertitle">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-aftertitle-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button
+              class="button about-button"
+              type="button"
+              targer="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Online-booking
+            </button>
+          </div>
         </div>
       </section>
       <!--SECTION PRICES 3-->
       <section class="prices">
         <div class="container">
-          <p class="prices-pre-title">Spend your time with the best masters</p>
+          <p class="prices-pre-title pretitle">Spend your time with the best masters</p>
           <h2 class="prices-title">Services and prices</h2>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-item-text">Men’s haircut</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Beard trim</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Mustache trim</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Straight razor shave</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-          </ul>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-item-text">Trainee’s haircut</p>
-              <p class="prices-item-text">from 50 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Haircut under the nozzle</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Camouflage of gray hair</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-          </ul>
+          <div class="prices-wrap">
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-item-text">Men’s haircut</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Beard trim</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Mustache trim</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Straight razor shave</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-item-text">Trainee’s haircut</p>
+                <p class="prices-item-text">from 50 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Haircut under the nozzle</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Camouflage of gray hair</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
           <button
-            class="header-button"
+            class="button prices-btn"
             type="button"
             targer="_blank"
             rel="noopener noreferrer nofollow"
@@ -183,36 +189,40 @@
       <!--SECTION BENEFITS 4-->
       <section class="benefits">
         <div class="container">
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <span class="count">600</span>
-              <p class="count-text">Satisfied customers per day</p>
-            </li>
-            <li class="benefits-item">
-              <span class="count">50</span>
-              <p class="count-text">Awards for excellent service</p>
-            </li>
-            <li class="benefits-item">
-              <span class="count">20</span>
-              <p class="count-text">Kyiv’s best barbers</p>
-            </li>
-            <li class="benefits-item">
-              <span class="count">100</span>
-              <p class="count-text">Gifts for regular customers</p>
-            </li>
-          </ul>
-          <p class="befenits-pre-title">Old traditional school</p>
-          <h2 class="benefits-title">¿Why people come to us?</h2>
-          <p class="benefits-after-title">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="count-wrap">
+            <ul class="benefits-list list">
+              <li class="benefits-item">
+                <span class="count">600</span>
+                <p class="count-text">Satisfied customers per day</p>
+              </li>
+              <li class="benefits-item">
+                <span class="count">50</span>
+                <p class="count-text">Awards for excellent service</p>
+              </li>
+              <li class="benefits-item">
+                <span class="count">20</span>
+                <p class="count-text">Kyiv’s best barbers</p>
+              </li>
+              <li class="benefits-item">
+                <span class="count">100</span>
+                <p class="count-text">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-wrap">
+            <p class="befenits-pre-title pretitle">Old traditional school</p>
+            <h2 class="benefits-title">¿Why people come to us?</h2>
+            <p class="benefits-after-title">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
         </div>
       </section>
       <!--SECTION TEAM 5-->
       <section class="team">
         <div class="container">
-          <p class="team-pre-title">For true enjoyers of the atmosphere</p>
+          <p class="team-pre-title pretitle">For true enjoyers of the atmosphere</p>
           <h2 class="team-title">Our barbers</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -225,6 +235,55 @@
               />
               <h3 class="team-member">John Smith</h3>
               <p class="team-member-skills">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://twitter.com/?lang=uk"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-item">
               <img
@@ -236,6 +295,55 @@
               />
               <h3 class="team-member">Michele Doe</h3>
               <p class="team-member-skills">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://twitter.com/?lang=uk"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-item">
               <img
@@ -247,6 +355,55 @@
               />
               <h3 class="team-member">Alan Black</h3>
               <p class="team-member-skills">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://twitter.com/?lang=uk"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="barbers-soc-link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -254,7 +411,7 @@
       <!--SECTION TEAM PHOTOS 6-->
       <section class="team-photos">
         <div class="container">
-          <p class="team-photos-title">In Latin, "barba" means "beard"</p>
+          <p class="team-photos-title pretitle">In Latin, "barba" means "beard"</p>
           <ul class="team-photos-list list">
             <li class="team-photos-item">
               <img
