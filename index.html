@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -26,21 +26,23 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="" class="header-logo">
+          <a href="./index.html" class="header-logo">
             <img src="./image/Logo.svg" alt="logo" />
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-item-link link" href="">About</a>
+              <a class="header-item-link link current" href="#about">About</a>
             </li>
             <li class="header-item">
-              <a class="header-item-link link" href="">Services and prices</a>
+              <a class="header-item-link link" href="#prices"
+                >Services and prices</a
+              >
             </li>
             <li class="header-item">
-              <a class="header-item-link link" href="">Barbers</a>
+              <a class="header-item-link link" href="#barbers">Barbers</a>
             </li>
             <li class="header-item">
-              <a class="header-item-link link" href="">Contacts</a>
+              <a class="header-item-link link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -48,33 +50,37 @@
         <a class="header-contacts link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="button">Online-booking</button>
+        <button type="button" class="button" data-modal-open>
+          Online-booking
+        </button>
       </div>
     </header>
     <main>
       <!--SECTION HERO-->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                class="hero-link link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                class="hero-link link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href=""
+                  targer="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href=""
+                  targer="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-wrap">
             <p class="hero-pretitle pretitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -86,7 +92,7 @@
         </div>
       </section>
       <!--SECTION ABOUT 2-->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <ul class="about-list list">
             <li class="about-item">
@@ -134,9 +140,11 @@
         </div>
       </section>
       <!--SECTION PRICES 3-->
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="container">
-          <p class="prices-pre-title pretitle">Spend your time with the best masters</p>
+          <p class="prices-pre-title pretitle">
+            Spend your time with the best masters
+          </p>
           <h2 class="prices-title">Services and prices</h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
@@ -187,7 +195,7 @@
         </div>
       </section>
       <!--SECTION BENEFITS 4-->
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <div class="count-wrap">
             <ul class="benefits-list list">
@@ -220,19 +228,28 @@
         </div>
       </section>
       <!--SECTION TEAM 5-->
-      <section class="team">
+      <section class="team" id="barbers">
         <div class="container">
-          <p class="team-pre-title pretitle">For true enjoyers of the atmosphere</p>
+          <p class="team-pre-title pretitle">
+            For true enjoyers of the atmosphere
+          </p>
           <h2 class="team-title">Our barbers</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-images"
-                src="./image/John Smith.jpg"
-                alt="John Smith"
-                width="320"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  class="team-images"
+                  src="./image/John Smith.jpg"
+                  alt="John Smith"
+                  width="320"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Natus tempora commodi eveniet fugiat ut qui?
+                </p>
+              </div>
+
               <h3 class="team-member">John Smith</h3>
               <p class="team-member-skills">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -286,13 +303,23 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                class="team-images"
-                src="./image/Michele Doe.jpg"
-                alt="Michele Doe"
-                width="320"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  class="team-images"
+                  src="./image/Michele Doe.jpg"
+                  alt="Michele Doe"
+                  width="320"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam quas soluta obcaecati doloremque hic nisi animi
+                  exercitationem aliquid enim temporibus libero harum voluptatum
+                  officia, veritatis sit possimus repudiandae tempora atque
+                  voluptate similique. Quae iusto, quisquam aliquid minus
+                  voluptatum explicabo repudiandae amet esse deleniti.
+                </p>
+              </div>
               <h3 class="team-member">Michele Doe</h3>
               <p class="team-member-skills">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -346,13 +373,20 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                class="team-images"
-                src="./image/Alan Black.jpg"
-                alt="Alan Black"
-                width="320"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  class="team-images"
+                  src="./image/Alan Black.jpg"
+                  alt="Alan Black"
+                  width="320"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto quos dolor quas a saepe, et aliquid tempora eligendi.
+                  Similique, provident!
+                </p>
+              </div>
               <h3 class="team-member">Alan Black</h3>
               <p class="team-member-skills">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -411,7 +445,9 @@
       <!--SECTION TEAM PHOTOS 6-->
       <section class="team-photos">
         <div class="container">
-          <p class="team-photos-title pretitle">In Latin, "barba" means "beard"</p>
+          <p class="team-photos-title pretitle">
+            In Latin, "barba" means "beard"
+          </p>
           <ul class="team-photos-list list">
             <li class="team-photos-item">
               <img
@@ -459,7 +495,7 @@
         </div>
       </section>
       <!--SECTION CONTACTS 8-->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="contacts-title">Contacts</h2>
           <address class="address">
@@ -501,5 +537,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="" width="10" height="10">
+            <use href="./image/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
