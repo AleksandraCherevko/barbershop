@@ -64,20 +64,20 @@
               <li class="hero-item">
                 <a
                   class="hero-link link"
-                  href=""
+                  href="https://www.instagram.com/"
                   targer="_blank"
                   rel="noopener noreferrer nofollow"
-                  >Instagram</a
-                >
+                  >Instagram
+                </a>
               </li>
               <li class="hero-item">
                 <a
                   class="hero-link link"
-                  href=""
+                  href="https://www.Youtube.com/"
                   targer="_blank"
                   rel="noopener noreferrer nofollow"
-                  >Youtube</a
-                >
+                  >Youtube
+                </a>
               </li>
             </ul>
           </div>
@@ -187,7 +187,6 @@
           <button
             class="button prices-btn"
             type="button"
-            targer="_blank"
             rel="noopener noreferrer nofollow"
           >
             Online-booking
@@ -239,7 +238,7 @@
               <div class="barbers-top-wrap">
                 <img
                   class="team-images"
-                  src="./image/John Smith.jpg"
+                  src="./image/JohnSmith.jpg"
                   alt="John Smith"
                   width="320"
                   height="346"
@@ -306,8 +305,8 @@
               <div class="barbers-top-wrap">
                 <img
                   class="team-images"
-                  src="./image/Michele Doe.jpg"
-                  alt="Michele Doe"
+                  src="./image/MicheleDoe.jpg"
+                  alt="MicheleDoe"
                   width="320"
                   height="346"
                 />
@@ -376,7 +375,7 @@
               <div class="barbers-top-wrap">
                 <img
                   class="team-images"
-                  src="./image/Alan Black.jpg"
+                  src="./image/AlanBlack.jpg"
                   alt="Alan Black"
                   width="320"
                   height="346"
@@ -452,7 +451,7 @@
             <li class="team-photos-item">
               <img
                 class="team-photos-omages"
-                src="./image/Rectangle 251.jpg"
+                src="./image/Rectangle251.jpg"
                 alt=""
                 width="270"
                 height="360"
@@ -461,7 +460,7 @@
             <li class="team-photos-item">
               <img
                 class="team-photos-images"
-                src="./image/Rectangle 261.jpg"
+                src="./image/Rectangle261.jpg"
                 alt=""
                 width="270"
                 height="360"
@@ -470,7 +469,7 @@
             <li class="team-photos-item">
               <img
                 class="team-photos-omages"
-                src="./image/Rectangle 271.jpg"
+                src="./image/Rectangle271.jpg"
                 alt=""
                 width="270"
                 height="360"
@@ -479,7 +478,7 @@
             <li class="team-photos-item">
               <img
                 class="team-photos-omages"
-                src="./image/Rectangle 281.jpg"
+                src="./image/Rectangle281.jpg"
                 alt=""
                 width="270"
                 height="360"
@@ -526,7 +525,7 @@
     <!--FOOTER-->
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">&copyCopyright 2020</p>
+        <p class="footer-text"><span>&#169;</span>Copyright 2020</p>
         <ul class="footer-list list">
           <li class="footer-item">
             <a class="footer-link" href="">Instagram</a>
@@ -537,13 +536,55 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="" width="10" height="10">
             <use href="./image/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">ONLINE-BOOKING</p>
+
+        <form class="modal-form">
+          <div class="modal-form-wrap">
+            <label
+              ><span class="data-enter">Enter your name</span>
+              <input
+                class="modal-input"
+                type="text"
+                placeholder=""
+                name="user-name"
+                required
+            /></label>
+
+            <label>
+              <span class="data-enter">Enter your phone number</span>
+              <input
+                class="modal-input"
+                type="tel"
+                placeholder=""
+                name="user-tel"
+                required
+            /></label>
+
+            <label
+              ><span class="data-enter">Enter your e-mail</span>
+              <input
+                class="modal-input"
+                type="email"
+                placeholder=""
+                name="user-email"
+                required
+            /></label>
+
+            <div class="modal-button-wrap">
+              <button type="submit" class="button modal-button">confirm</button>
+              <button type="reset" class="button modal-button">
+                choose another date and time
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
