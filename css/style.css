@@ -608,9 +608,11 @@ img {
 }
 /*---SECTION BOOKING 7---*/
 .booking {
-  padding-top: 130px;
-  padding-bottom: 183px;
   background-color: #191c26;
+}
+
+.booking > .container {
+  display: flex;
 }
 .booking-title {
   margin-bottom: 44px;
@@ -621,10 +623,24 @@ img {
   letter-spacing: 0.05em;
   color: var(--first-text-color);
 }
+
+.address-list {
+  display: flex;
+}
+
+.booking-wrap {
+  display: flex;
+  padding-top: 130px;
+  padding-right: 30px;
+  padding-bottom: 183px;
+  padding-left: 215px;
+}
 /*---SECTION CONTACTS 8---*/
 .contacts-wrap {
   padding-top: 130px;
+  padding-right: 436px;
   padding-bottom: 120px;
+  padding-left: 100px;
   background-color: #191c26;
 
   background-image: linear-gradient(
@@ -694,6 +710,9 @@ img {
   color: #9da4bd;
 }
 
+.booking-wrap {
+  display: flex;
+}
 /*---FOOTER---*/
 
 .footer {
@@ -749,7 +768,6 @@ img {
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
-  cursor: pointer;
 }
 
 .modal-close {
@@ -833,5 +851,25 @@ img {
 
 .data-enter:hover,
 .data-enter:focus {
+  color: var(--accent-color);
+}
+
+.modal-user-text {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 140px;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  color: black;
+  padding-left: 4px;
+  padding-right: 10px;
+  outline: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-user-text:hover,
+.modal-user-text:focus {
   color: var(--accent-color);
 }

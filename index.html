@@ -62,20 +62,12 @@
           <div class="hero-soc">
             <ul class="hero-list list">
               <li class="hero-item">
-                <a
-                  class="hero-link link"
-                  href="https://www.instagram.com/"
-                  targer="_blank"
-                  rel="noopener noreferrer nofollow"
+                <a class="hero-link link" href="https://www.instagram.com/"
                   >Instagram
                 </a>
               </li>
               <li class="hero-item">
-                <a
-                  class="hero-link link"
-                  href="https://www.Youtube.com/"
-                  targer="_blank"
-                  rel="noopener noreferrer nofollow"
+                <a class="hero-link link" href="https://www.Youtube.com/"
                   >Youtube
                 </a>
               </li>
@@ -131,7 +123,6 @@
             <button
               class="button about-button"
               type="button"
-              targer="_blank"
               rel="noopener noreferrer nofollow"
             >
               Online-booking
@@ -488,37 +479,38 @@
         </div>
       </section>
       <!--SECTION BOOKING 7-->
-      <section class="booking">
+      <section class="booking" id="contacts">
         <div class="container">
-          <h2 class="booking-title">Online-booking</h2>
-        </div>
-      </section>
-      <!--SECTION CONTACTS 8-->
-      <section class="contacts" id="contacts">
-        <div class="container">
-          <h2 class="contacts-title">Contacts</h2>
-          <address class="address">
-            <ul class="address-list list">
-              <li class="address-item">
-                <a class="address-link link" href=""
-                  >st. Vasilkivska, 7A <br />
-                  Kyiv, 08132</a
-                >
-              </li>
-              <li>
-                <a class="phone-link" href="tel:+3804411111111"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="address-item">
-                <a class="email-link link" href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="working-hours-title">Working hours</p>
-          <p class="working-schedulle">Every day from 9:00 to 22:00</p>
+          <div class="booking-wrap">
+            <h2 class="booking-title">Online-booking</h2>
+          </div>
+          <!--SECTION CONTACTS 8-->
+          <div class="contacts-wrap">
+            <h2 class="contacts-title">Contacts</h2>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-item">
+                  <a class="address-link link" href=""
+                    >st. Vasilkivska, 7A <br />
+                    Kyiv, 08132</a
+                  >
+                </li>
+                <li>
+                  <a class="phone-link" href="tel:+3804411111111"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="email-link link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="working-hours-title">Working hours</p>
+
+            <p class="working-schedulle">Every day from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
     </main>
@@ -576,6 +568,17 @@
                 name="user-email"
                 required
             /></label>
+
+            <label for="user-text"
+              ><span class="data-enter">Enter date and time</span>
+
+              <textarea
+                class="modal-user-text"
+                name="user-text"
+                id="user-text"
+                placeholder=""
+              ></textarea>
+            </label>
 
             <div class="modal-button-wrap">
               <button type="submit" class="button modal-button">confirm</button>
