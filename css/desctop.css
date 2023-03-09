@@ -6,5 +6,12 @@
   /*------------------------------------HERO----------------------------------------*/
 
 
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
 
 }

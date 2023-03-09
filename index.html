@@ -20,6 +20,9 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+     <link rel="stylesheet" href="./css/mobile.css" />
+      <link rel="stylesheet" href="./css/tablet.css" />
+       <link rel="stylesheet" href="./css/desctop.css" />
   </head>
   <body>
     <!--HEADER NAVIGATION-->
@@ -84,7 +87,7 @@
         </div>
       </section>
       <!--SECTION ABOUT 2-->
-      <section class="about" id="about">
+      <!-- <section class="about" id="about">
         <div class="container">
           <ul class="about-list list">
             <li class="about-item">
@@ -129,9 +132,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--SECTION PRICES 3-->
-      <section class="prices" id="prices">
+      <!-- <section class="prices" id="prices">
         <div class="container">
           <p class="prices-pre-title pretitle">
             Spend your time with the best masters
@@ -183,9 +186,9 @@
             Online-booking
           </button>
         </div>
-      </section>
+      </section> -->
       <!--SECTION BENEFITS 4-->
-      <section class="benefits" id="benefits">
+      <!-- <section class="benefits" id="benefits">
         <div class="container">
           <div class="count-wrap">
             <ul class="benefits-list list">
@@ -216,9 +219,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--SECTION TEAM 5-->
-      <section class="team" id="barbers">
+      <!-- <section class="team" id="barbers">
         <div class="container">
           <p class="team-pre-title pretitle">
             For true enjoyers of the atmosphere
@@ -431,9 +434,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION TEAM PHOTOS 6-->
-      <section class="team-photos">
+      <!-- <section class="team-photos">
         <div class="container">
           <p class="team-photos-title pretitle">
             In Latin, "barba" means "beard"
@@ -477,26 +480,59 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION BOOKING 7-->
-      <section class="booking" id="contacts">
+
+      <!-- <div class="contact-wrap">
         <div class="container">
-          <div class="booking-wrap">
-            <h2 class="booking-title">Online-booking</h2>
-          </div>
+          <section class="booking" id="contacts">
+            <h2 class="booking-title title">Online-booking</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                class="online-input"
+                placeholder="Name*"
+                name="online-name"
+                required
+              />
+              <input
+                type="tel"
+                class="online-input"
+                placeholder="Phone*"
+                name="online-tel"
+                required
+              />
+              <textarea
+                name="online-message"
+                class="online-text"
+                placeholder="Message"
+              ></textarea>
+
+              <button
+                class="button"
+                type="submit"
+                rel="noopener noreferrer nofollow"
+              >
+                Send
+              </button>
+            </form>
+          </section> -->
           <!--SECTION CONTACTS 8-->
-          <div class="contacts-wrap">
+          <!-- <section class="contacts-online">
             <h2 class="contacts-title">Contacts</h2>
             <address class="address">
               <ul class="address-list list">
                 <li class="address-item">
-                  <a class="address-link link" href=""
-                    >st. Vasilkivska, 7A <br />
+                  <a
+                    class="address-link link"
+                    href="https://goo.gl/maps/ZPDWdVBaZGtmxCpi9"
+                  >
+                    st. Vasilkivska, 7A <br />
                     Kyiv, 08132</a
                   >
                 </li>
-                <li>
-                  <a class="phone-link" href="tel:+3804411111111"
+                <li class="address-item">
+                  <a class="phone-link link" href="tel:+3804411111111"
                     >+38 044 111 11 11</a
                   >
                 </li>
@@ -507,28 +543,34 @@
                 </li>
               </ul>
             </address>
-            <p class="working-hours-title">Working hours</p>
+            <p class="working-hours-title pretitle">Working hours</p>
 
             <p class="working-schedulle">Every day from 9:00 to 22:00</p>
-          </div>
+          </section>
         </div>
-      </section>
-    </main>
-    <!--FOOTER-->
-    <footer class="footer">
-      <div class="container">
-        <p class="footer-text"><span>&#169;</span>Copyright 2020</p>
-        <ul class="footer-list list">
-          <li class="footer-item">
-            <a class="footer-link" href="">Instagram</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="">Youtube</a>
-          </li>
-        </ul>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </main> -->
+    <!--FOOTER-->
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <p class="footer-text"><span>&#169;</span>Copyright 2020</p>
+          <ul class="footer-list list pretitle">
+            <li class="footer-item">
+              <a class="hero-link link" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="hero-link link" href="https://www.youtube.com/"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="" width="10" height="10">
@@ -570,7 +612,7 @@
             /></label>
 
             <label for="user-text"
-              ><span class="data-enter">Enter date and time</span>
+              ><span class="data-enter">Left your comment</span>
 
               <textarea
                 class="modal-user-text"
@@ -579,7 +621,17 @@
                 placeholder=""
               ></textarea>
             </label>
-
+            <div class="modal-field">
+              <label for="user-date" class="data-enter"
+                >Choose date and time</label
+              >
+              <select name="date" id="date" class="modal-input">
+                <option value="march">March, 9 14:00</option>
+                <option value="march">March, 9 16:40</option>
+                <option value="march">March, 10 9:00</option>
+                <option value="march">March, 11 14:30</option>
+              </select>
+            </div>
             <div class="modal-button-wrap">
               <button type="submit" class="button modal-button">confirm</button>
               <button type="reset" class="button modal-button">
@@ -589,7 +641,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
