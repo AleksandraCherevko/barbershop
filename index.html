@@ -6,79 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
+    
+    
     <script type="module" crossorigin src="/barbershop/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/barbershop/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/barbershop/assets/index-1310880b.css">
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/barbershop/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <nav class="nav">
+      <a class="nav-logo" href="/">
+        <svg class="logo" width="69" height="50">
+          <use href="../img/symbol-defs.svg#icon-logo"></use>
+        </svg>
+      </a>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-item-link">About</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="nav-item">
+          <a href="/" class="nav-item-link">Services and prices</a>
         </li>
+        <li class="nav-item"><a href="/" class="nav-item-link">Barbers</a></li>
+        <li class="nav-item"><a href="/" class="nav-item-link">Contacts</a></li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/barbershop/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    </nav>
+    <div class="nav-row">
+      <p class="nav-tel">+38 044 111 11 11</p>
+      <button class="nav-button">Online-booking</button>
     </div>
   </div>
-</section>
+</header>
 
+    
 
     
   </body>
