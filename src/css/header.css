@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+    align-items: flex-start;
   }
   .nav-list {
     display: flex;
@@ -80,11 +81,19 @@
     text-transform: uppercase;
   }
 
+  .nav-button:hover,
+  .nav-button:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--title-color);
+    background-color: var(--accent-color);
+  }
+
   .nav-row {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     margin-left: 0 auto;
+    gap: 20px;
   }
 
   .nav-logo {
