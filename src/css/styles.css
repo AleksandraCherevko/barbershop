@@ -29,3 +29,28 @@ body {
 .icon-logo {
   stroke: white;
 }
+
+.btn {
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--title-color);
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}

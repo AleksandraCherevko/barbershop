@@ -18,6 +18,18 @@
   .header {
     background-color: black;
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* MOB MENU */
+
+  .mob-menu-btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  .mome-menu-btn-logo {
+    stroke: white;
   }
 }
 
@@ -31,13 +43,14 @@
   .header {
     background-color: black;
     padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
   }
   .nav {
     display: flex;
     align-items: center;
     margin-right: auto;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   .nav-list {
     display: flex;
@@ -58,34 +71,7 @@
   }
 
   .nav-tel {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-    color: var(--title-color);
-  }
-
-  .nav-button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1.4;
-    letter-spacing: 0.09em;
-    background-color: transparent;
-    border: 1px solid var(--accent-color);
-    color: var(--title-color);
-    border-radius: 25px;
-    text-transform: uppercase;
-  }
-
-  .nav-button:hover,
-  .nav-button:focus {
-    border: 1px solid var(--accent-color);
-    color: var(--title-color);
-    background-color: var(--accent-color);
+    display: none;
   }
 
   .nav-row {
@@ -98,11 +84,68 @@
 
   .nav-logo {
     margin-right: 50px;
+    width: 67px;
+    height: 55px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
+  }
+
+  .header > .container {
+    width: 953px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: black;
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
+  .nav-item {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: var(--title-color);
+  }
+
+  .nav-item:hover,
+  .nav-item:focus {
+    color: var(--accent-color);
+  }
+
+  .nav-tel {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: var(--title-color);
+  }
+
+  .nav-row {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0 auto;
+    align-items: center;
+    gap: 43px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-logo {
+    margin-right: 130px;
   }
 }
