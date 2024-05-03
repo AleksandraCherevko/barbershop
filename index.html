@@ -8,8 +8,7 @@
     
     
     
-    <script type="module" crossorigin src="/barbershop/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/barbershop/assets/index-b94e0113.css">
+    <link rel="stylesheet" href="/barbershop/assets/index-b513fc42.css">
   </head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,21 +36,61 @@
         <li class="nav-item"><a href="/" class="nav-item-link">Barbers</a></li>
         <li class="nav-item"><a href="/" class="nav-item-link">Contacts</a></li>
       </ul>
-      <button class="mob-menu-btn">
-        <svg class="mome-menu-btn-logo" width="69" height="50">
-          <use href="/barbershop/assets/symbol-defs-1b934a6b.svg#icon-icon"></use>
-        </svg>
-      </button>
     </nav>
     <div class="nav-row">
       <p class="nav-tel">+38 044 111 11 11</p>
       <button class="btn nav-button">Online-booking</button>
+    </div>
+    <button class="mob-menu-btn">
+      <svg class="mob-menu-btn-logo" width="40" height="40">
+        <use href="/barbershop/assets/symbol-defs-1b934a6b.svg#icon-icon"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- MOB MENU -->
+  <div class="mobile-menu is-open is-hidden">
+    <div class="container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="mob-menu-btn-logo-close" width="40" height="40">
+          <use href="/barbershop/assets/symbol-defs-1b934a6b.svg#icon-close-mob-mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-item-link" href="#">About</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-item-link" href="#">Services and prices</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-item-link" href="#">Barbers</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-item-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <div class="mob-menu-nav-row">
+        <p class="mob-menu-nav-tel">+38 044 111 11 11</p>
+        <button class="btn mob-menu-nav-button">Online-booking</button>
+      </div>
+
+      <div class="mob-menu-social-media">
+        <ul class="mob-menu-social-media-list">
+          <li class="mob-menu-social-media-item">
+            <a href="/" class="mob-menu-socail-media-link"></a>Instagram
+          </li>
+          <li class="mob-menu-social-media-item">
+            <a href="/" class="mob-menu-socail-media-link"></a>Youtube
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
 
     
 
-    
+    <script src="js/mobmenu.js"></script>
   </body>
 </html>
