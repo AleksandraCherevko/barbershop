@@ -3,8 +3,8 @@ const mobMenu = document.querySelector('.mobile-menu');
 const closeMobMenuBtn = document.querySelector('.mobile-menu-close-btn');
 
 openMobMenuBtn.addEventListener('click', openMobMenu);
-closeMobMenuBtn.addEventListener('click', closeMobMenu);
+closeMobMenuBtn.addEventListener('click', openMobMenu);
 
 function openMobMenu() {
-  openMobMenuBtn.mobMenu.classList.toggle('is-open');
+  mobMenu.classList.toggle('is-open');
 }
