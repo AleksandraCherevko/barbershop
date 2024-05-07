@@ -50,7 +50,7 @@
     overflow: scroll;
   }
   .mob-menu-btn-logo-close {
-    fill: black;
+    stroke: black;
   }
   .mobile-menu {
     padding-top: 48px;
@@ -130,19 +130,25 @@
     padding-right: 37px;
     padding-left: 37px;
     margin-top: 24px;
-    color: var(--second-text-color);
+    color: var(--third-text-color);
   }
 
   .mob-menu-social-media {
     margin-top: 64px;
     display: flex;
   }
+
+  .mob-menu-social-media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
   .mob-menu-social-media-item {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.36;
     letter-spacing: 0.2em;
-    color: var(--second-text-color);
+    color: var(--third-text-color);
   }
 
   .mob-menu-social-media-item:hover,
@@ -161,7 +167,7 @@
     left: 0;
     width: 60px;
     height: 1px;
-    background-color: var(--second-text-color);
+    background-color: var(--third-text-color);
   }
 }
 
