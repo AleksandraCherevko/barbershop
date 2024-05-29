@@ -263,7 +263,10 @@
     max-width: 1216px;
     width: 100%;
   }
-
+  .desctope-wrap {
+    display: flex;
+    gap: 136px;
+  }
   .co-work {
     padding-top: 164px;
     padding-bottom: 164px;
@@ -273,11 +276,7 @@
     color: black;
   }
   .co-work-title {
-    display: inline-block;
-    width: 507px;
-    max-height: 208px;
-
-    margin-bottom: 0;
+    margin-bottom: 80px;
     font-family: Impact;
     font-size: 108px;
     line-height: 1.15;
@@ -287,7 +286,7 @@
     color: #00b068;
   }
   .co-work-after-title {
-    margin-bottom: 32px;
+    margin-bottom: 120px;
     font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
@@ -298,7 +297,7 @@
   }
   .co-work-contact-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 16px;
   }
   .co-work-contact-item {
@@ -327,10 +326,13 @@
 
   .co-work-form-wrap {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .co-work-form {
-    width: 704px;
+    width: 572px;
   }
 
   .co-work-user {
