@@ -1,0 +1,389 @@
+@media screen and (max-width: 768px) {
+  .co-work > .container {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .co-work {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .container {
+  }
+  .co-work-wrap {
+  }
+
+  .co-work-span {
+    color: black;
+  }
+  .co-work-title {
+    margin-bottom: 40px;
+    font-size: 52px;
+
+    line-height: 1.04;
+    letter-spacing: 1.23px;
+    text-transform: uppercase;
+    color: #00b068;
+  }
+  .co-work-after-title {
+    margin-bottom: 32px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+  }
+  .co-work-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+  .co-work-contact-item {
+    align-items: center;
+  }
+
+  .co-work-contact-link {
+    display: flex;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .co-work-contact-link:hover,
+  .co-work-contact-link:focus {
+    color: #00b068;
+  }
+
+  .co-work-contact-icon {
+    margin-right: 16px;
+  }
+
+  /* FORM */
+
+  .co-work-form-wrap {
+    margin-top: 40px;
+  }
+
+  .co-work-form {
+    width: 320px;
+  }
+
+  .co-work-user {
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  .co-work-user,
+  .co-work-message {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #29292966;
+    background-color: #e4e5e6;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .co-work-message {
+    box-sizing: border-box;
+    resize: none;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .co-work-btn {
+    width: 320px;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    background-color: #00b068;
+    border: none;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  .co-work-btn:hover,
+  .co-work-btn:focus {
+    background-color: #009156;
+  }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .co-work > .container {
+    max-width: 704px;
+    width: 100%;
+  }
+
+  .co-work {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .co-work-span {
+    color: black;
+  }
+  .co-work-title {
+    margin-bottom: 63px;
+    font-family: Impact;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 1.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #00b068;
+  }
+  .co-work-after-title {
+    margin-bottom: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 488px;
+  }
+  .co-work-contact-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .co-work-contact-item {
+    align-items: center;
+  }
+
+  .co-work-contact-link {
+    display: flex;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .co-work-contact-link:hover,
+  .co-work-contact-link:focus {
+    color: #00b068;
+  }
+
+  .co-work-contact-icon {
+    margin-right: 16px;
+  }
+
+  /* FORM */
+
+  .co-work-form-wrap {
+    margin-top: 60px;
+  }
+
+  .co-work-form {
+    width: 704px;
+  }
+
+  .co-work-user {
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  .co-work-user,
+  .co-work-message {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #29292966;
+    background-color: #e4e5e6;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .co-work-message {
+    box-sizing: border-box;
+    resize: none;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .co-work-btn {
+    width: 173px;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    background-color: #00b068;
+    border: none;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  .co-work-btn:hover,
+  .co-work-btn:focus {
+    background-color: #009156;
+  }
+}
+
+/* DESCTOPE */
+
+@media screen and (min-width: 1200px) {
+  .co-work > .container {
+    max-width: 1216px;
+    width: 100%;
+  }
+
+  .co-work {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .co-work-span {
+    color: black;
+  }
+  .co-work-title {
+    display: inline-block;
+    width: 507px;
+    max-height: 208px;
+
+    margin-bottom: 0;
+    font-family: Impact;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 1.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #00b068;
+  }
+  .co-work-after-title {
+    margin-bottom: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 488px;
+  }
+  .co-work-contact-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .co-work-contact-item {
+    align-items: center;
+  }
+
+  .co-work-contact-link {
+    display: flex;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .co-work-contact-link:hover,
+  .co-work-contact-link:focus {
+    color: #00b068;
+  }
+
+  .co-work-contact-icon {
+    margin-right: 16px;
+  }
+
+  /* FORM */
+
+  .co-work-form-wrap {
+    margin-top: 60px;
+  }
+
+  .co-work-form {
+    width: 704px;
+  }
+
+  .co-work-user {
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  .co-work-user,
+  .co-work-message {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #29292966;
+    background-color: #e4e5e6;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .co-work-message {
+    box-sizing: border-box;
+    resize: none;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .co-work-btn {
+    width: 173px;
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    background-color: #00b068;
+    border: none;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  .co-work-btn:hover,
+  .co-work-btn:focus {
+    background-color: #009156;
+  }
+}
