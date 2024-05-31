@@ -1,41 +1,58 @@
-const input = document.querySelector('.co-work-user');
-const form = document.querySelector('.co-work-form-wrap');
-form.addEventListener('submit', handleSubmit);
+const formEl = {
+  input: document.querySelector('.co-work-user'),
+  form: document.querySelector('.co-work-form-wrap'),
+  textarea: document.querySelector('.co-work-message'),
+  messageBtn: document.querySelector('.co-work-btn'),
+};
 
-const textarea = document.querySelector('.co-work-message');
+// Check if email is valid
+const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-const messageBtn = document.querySelector('.co-work-btn');
+function isEmailValid(value) {
+  return emailPattern.test(value);
+}
 
-// Полю для введення електронної пошти слід додати мінімальну валідацію
-// введених даних  за допомогою  атрибуту
-// pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$".
+// Add event listener for form submission
+formEl.form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  const elements = event.target.elements;
 
-  const patter = '^w+(.w+)?@[a-zA-Z_]+?.[a-zA-Z]{2,3}$';
+  const inputEmail = formEl.input.value;
+  const inputMessage = formEl.textarea.value;
 
-  const inputEl = {
-    email: elements.username.value,
-    message: elements.feedback.value,
-  };
-  console.log(inputEl);
-
-  const error = document.createElement('div');
-  error.className = 'error';
-  error.style.color = 'red';
-
-  if (!inputEl.email || !inputEl.message) {
-    error.innerHTML = 'Cannot be blank';
+  // Validate email
+  if (!isEmailValid(inputEmail)) {
+    console.log('Please enter a valid email address.');
+    return;
   }
+
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api-docs/';
+
+  fetch(BASE_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email: inputEmail, message: inputMessage }),
+  })
+    .then(response => {
+      if (response.ok) {
+        alert('Message sent successfully!');
+        formEl.form.reset(); // Clear form
+      } else {
+        throw new Error('Failed to send message.');
+      }
+    })
+    .catch(error => {
+      alert(error.message);
+    });
 }
 
-// function submitTextArea(event) {
-//   event.preventDefault();
-//   for (let i = 0; i < textarea.length; i++) {
-//     if (!textarea[i].value) {
-//       console.log('field is blank', textarea[i]);
-//     }
-//   }
-// }
+// Handle input change
+formEl.input.addEventListener('input', handleUpdate);
+formEl.textarea.addEventListener('input', handleUpdate);
+
+function handleUpdate(event) {
+  console.log(event.target.value);
+}
