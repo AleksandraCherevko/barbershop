@@ -1,6 +1,6 @@
 const formEl = {
   input: document.querySelector('.co-work-user'),
-  form: document.querySelector('.co-work-form-wrap'),
+  form: document.querySelector('.co-work-form'),
   textarea: document.querySelector('.co-work-message'),
   messageBtn: document.querySelector('.co-work-btn'),
 };
@@ -34,18 +34,21 @@ function handleSubmit(event) {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ email: inputEmail, message: inputMessage }),
+    section: JSON.stringify({
+      email: inputEmail.value,
+      message: inputMessage.value,
+    }),
   })
     .then(response => {
       if (response.ok) {
-        alert('Message sent successfully!');
+        console.log('Message sent successfully!');
         formEl.form.reset(); // Clear form
       } else {
         throw new Error('Failed to send message.');
       }
     })
     .catch(error => {
-      alert(error.message);
+      console.log(error.message);
     });
 }
 
@@ -54,5 +57,5 @@ formEl.input.addEventListener('input', handleUpdate);
 formEl.textarea.addEventListener('input', handleUpdate);
 
 function handleUpdate(event) {
-  console.log(event.target.value);
+  console.log(event.currentTarget.value);
 }
