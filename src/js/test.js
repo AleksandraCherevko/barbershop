@@ -15,6 +15,27 @@ function isEmailValid(value) {
 // Add event listener for form submission
 formEl.form.addEventListener('submit', handleSubmit);
 
+// function showError(field, errText) {
+//   field.classList.add('co-work-user');
+//   const error = document.createElement('span');
+//   field.after(error);
+// }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.getElementById('username');
+  const errorMessage = document.getElementById('username-error');
+
+  input.addEventListener('blur', function () {
+    if (input.value.trim() === '') {
+      input.classList.add('invalid');
+      errorMessage.style.display = 'block';
+    } else {
+      input.classList.remove('invalid');
+      errorMessage.style.display = 'none';
+    }
+  });
+});
+
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -23,7 +44,7 @@ function handleSubmit(event) {
 
   // Validate email
   if (!isEmailValid(inputEmail)) {
-    console.log('Please enter a valid email address.');
+    showError(``);
     return;
   }
 

@@ -337,7 +337,7 @@
 
   .co-work-user {
     box-sizing: border-box;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 16px;
@@ -358,6 +358,7 @@
   }
 
   .co-work-message {
+    margin-top: 34px;
     box-sizing: border-box;
     resize: none;
     padding: 16px;
@@ -419,5 +420,13 @@
 
   .modal-close-btn:hover {
     background: #0056b3;
+  }
+  .error-message {
+    color: red;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
   }
 }
