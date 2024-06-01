@@ -51,9 +51,7 @@
             name="email"
             placeholder="Your email*"
           />
-          <span class="error-message" id="username-error"
-            >This field is required</span
-          >
+          <div class="email-error-container"></div>
           <textarea
             class="co-work-message"
             name="comment"
@@ -61,18 +59,12 @@
             placeholder="Message"
           ></textarea>
 
-          <button class="co-work-btn" type="submit">Send message</button>
+          <button class="co-work-btn open-modal-btn" type="submit">
+            Send message
+          </button>
         </form>
       </div>
-      <!-- MODAL WINDOW -->
-      <!-- <div id="modal" class="co-work-modal" style="display: none">
-        <div class="co-work-modal-content">
-          <p class="co-work-modal-message">MODAL WINDOW</p>
-          <button class="modal-close-btn" class="co-work-modal-closeBtn">
-            Close
-          </button>
-        </div>
-      </div> -->
+      <div class="modal-container"></div>
     </div>
   </div>
 </section>
