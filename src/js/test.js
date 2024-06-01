@@ -1,4 +1,3 @@
-//формы элементов
 const formEl = {
   input: document.querySelector('.co-work-user'),
   form: document.querySelector('.co-work-form'),
@@ -11,7 +10,7 @@ formEl.form.addEventListener('submit', handleSubmit);
 
 const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-// работа с ошибкой - если неправ.почта - ошибка, когда введена прав почта,ошибка исчезает
+// Функция для валидации email
 function isEmailValid(value) {
   const isValid = emailPattern.test(value);
   const container = formEl.input.parentNode;
@@ -32,11 +31,22 @@ function isEmailValid(value) {
   return isValid;
 }
 
-// отправляем HHTP запыт
+// Функция для создания разметки модального окна
+function createModal({ title, message }) {
+  return `
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-closeBtn">X</button>
+        <h3 class="modal-title-a">${title}</h3>
+        <p class="modal-message">${message}</p>
+      </div>
+    </div>`;
+}
 
+// Обработчик отправки формы
 function handleSubmit(event) {
   event.preventDefault();
-
+  formEl.modalContainer.innerHTML = '';
   const inputEmail = formEl.input.value;
   const inputMessage = formEl.textarea.value;
 
@@ -46,7 +56,6 @@ function handleSubmit(event) {
   }
 
   const BASE_URL = 'https://portfolio-js.b.goit.study/api-docs/';
-
   fetch(BASE_URL, {
     method: 'POST',
     headers: {
@@ -79,36 +88,31 @@ function handleSubmit(event) {
       }
     })
     .catch(error => {
-      console.log(error);
+      console.error(error);
+      const modalHTML = createModal({
+        title: 'Error',
+        message: 'There was an error sending your message. Please try again.',
+      });
+      formEl.modalContainer.insertAdjacentHTML('beforeend', modalHTML);
+      document.querySelector('#myModal').classList.add('show');
+      modalCloseEvList();
     });
 }
 
-// Modal window
-function createModal({ title, message }) {
-  return `
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <button class="modal-closeBtn">X</button>
-        <h3 class="modal-title-a">${title}</h3>
-        <p class="modal-message">${message}</p>
-      </div>
-    </div>
-  `;
-}
-
+// Функция для добавления обработчика события закрытия модального окна
 function modalCloseEvList() {
   const closeBtn = document.querySelector('.modal-closeBtn');
   closeBtn.addEventListener('click', closeModal);
 }
 
+// Функция для закрытия модального окна
 function closeModal() {
   const modal = document.querySelector('#myModal');
   modal.classList.remove('show');
   modal.remove();
 }
 
-//ошибка
-
+// Функция для отображения сообщения об ошибке
 function showError(container, errorMessage) {
   const errorElem = container.querySelector('.error-message');
   if (errorElem) {
