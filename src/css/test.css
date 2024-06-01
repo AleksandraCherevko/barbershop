@@ -126,6 +126,73 @@
   .co-work-btn:focus {
     background-color: #009156;
   }
+  .modal > .container {
+    max-width: 320px;
+    width: 100%;
+  }
+  .modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed; /* Фиксированное положение */
+    z-index: 1; /* Высокий z-index, чтобы модальное окно было поверх всего */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Добавляем прокрутку для длинного содержимого */
+    background-color: #1e2023; /* Полупрозрачный черный фон */
+  }
+  /* Стили для содержимого модального окна */
+  .modal-content {
+    position: relative;
+    background-color: #2a2d32;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border: none;
+    border-radius: 10px;
+    width: 80%; /* Ширина 80% от окна браузера */
+    max-width: 320px; /* Максимальная ширина */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  }
+
+  /* Стили для кнопки закрытия */
+  .modal-closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* Стили для заголовка модального окна */
+  .modal-title-a {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #14c57c;
+  }
+
+  /* Стили для сообщения в модальном окне */
+  .modal-message {
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* Показываем модальное окно при добавлении класса .show */
+  .modal.show {
+    display: block;
+  }
+
+  .is-hidden {
+    display: none;
+  }
 }
 
 /* TABLET */
