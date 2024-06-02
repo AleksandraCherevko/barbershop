@@ -11,7 +11,7 @@ formEl.form.addEventListener('submit', handleSubmit);
 const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 // Функция для валидации email
-function isEmailValid(value) {
+export function isEmailValid(value) {
   const isValid = emailPattern.test(value);
   const container = formEl.input.parentNode;
   const errorMessage = container.querySelector('.error-message');
@@ -32,7 +32,7 @@ function isEmailValid(value) {
 }
 
 // Функция для создания разметки модального окна
-function createModal({ title, message }) {
+export function createModal({ title, message }) {
   return `
     <div id="myModal" class="modal">
       <div class="modal-content">
@@ -44,7 +44,7 @@ function createModal({ title, message }) {
 }
 
 // Обработчик отправки формы
-function handleSubmit(event) {
+export function handleSubmit(event) {
   event.preventDefault();
   formEl.modalContainer.innerHTML = '';
   const inputEmail = formEl.input.value;
