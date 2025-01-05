@@ -1,2 +1,106 @@
 .header {
+  border: 2px solid red;
+  padding-top: 30px;
+}
+.logo {
+  fill: white;
+}
+.nav-list {
+  display: none;
+}
+
+.nav-btn {
+  display: none;
+}
+.nav-tel {
+  display: none;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 32px;
+    display: flex;
+  }
+
+  .header > .container {
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-right: 48.73px;
+    width: 67.18px;
+    height: 55.46px;
+  }
+  .nav-list {
+    display: flex;
+    gap: 20.13px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 1);
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: rgba(255, 108, 0, 1);
+  }
+
+  .nav-btn {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.09em;
+    text-align: center;
+    padding: 12px 20px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border: 1px solid rgba(255, 108, 0, 1);
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: rgba(255, 108, 0, 1);
+  }
+
+  .nav-tel {
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-tel:hover,
+  .nav-tel:focus {
+    color: rgba(255, 108, 0, 1);
+  }
+  .nav-contacts {
+    margin-left: 45.29px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
 }
