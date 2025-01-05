@@ -113,18 +113,19 @@
     align-items: center;
     align-content: center;
   }
-  .header {
+  .logo {
+    margin-right: 131px;
   }
   .nav {
-    margin-right: auto;
     align-items: center;
     margin-right: auto;
   }
   .nav-contacts {
-    margin-left: 45.29px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 43px;
+  }
+  .nav-tel {
+    margin-left: 43px;
   }
 }
