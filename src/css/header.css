@@ -104,3 +104,27 @@
     align-items: center;
   }
 }
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1200px) {
+  .header > .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  .header {
+  }
+  .nav {
+    margin-right: auto;
+    align-items: center;
+    margin-right: auto;
+  }
+  .nav-contacts {
+    margin-left: 45.29px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 43px;
+  }
+}
