@@ -1,0 +1,135 @@
+.hero-container {
+  display: flex;
+  padding: 0;
+  max-width: 100%;
+}
+.hero-wrap {
+  background-color: #626060;
+  padding: 210px 30px;
+  background-image: linear-gradient(
+      to right,
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero/hero-mob-1x.jpg);
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero/hero-mob-2x.jpg);
+  }
+}
+.hero-container {
+  display: flex;
+}
+.hero-soc-media {
+  display: none;
+}
+
+.hero-pretitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(157, 164, 189, 0.6);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-pretitle::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+.hero-title {
+  margin-top: 20px;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-aftertitle {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(157, 164, 189, 1);
+}
+
+.hero-wrap {
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .hero {
+  }
+
+  .hero-container {
+    display: flex;
+  }
+  .container {
+  }
+  .hero-soc-media {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
+  .hero-soc-media-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
+  }
+
+  .hero-soc-media-list:before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+  .hero-soc-media-item {
+  }
+  .hero-soc-media-link {
+    color: black;
+  }
+
+  .hero-wrap {
+    flex-grow: 1;
+    padding: 252px 100px 208px;
+  }
+}
+/* DESKTOP */
+@media only screen and (min-width: 1200px) {
+}
