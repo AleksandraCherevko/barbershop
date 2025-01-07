@@ -10,8 +10,15 @@
   display: flex;
   align-items: center;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 .logo {
-  fill: white;
+  margin-right: 131px;
+  fill: #f7f7f7;
 }
 .nav-list {
   display: none;
