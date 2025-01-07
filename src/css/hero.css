@@ -5,7 +5,10 @@
 }
 .hero-wrap {
   background-color: rgba(25, 28, 38, 0.2);
-  padding: 210px 30px;
+  padding-top: 210px;
+  padding-left: 30px;
+  padding-bottom: 209px;
+  padding-right: 128px;
   background-image: linear-gradient(
       to right,
       rgba(25, 28, 38, 0.2),
