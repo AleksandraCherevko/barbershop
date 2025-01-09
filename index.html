@@ -21,7 +21,7 @@
     <link rel="icon" type="image/x-icon" href="/barbershop/assets/favicon-D2Pjfu_0.ico" />
 
     <script type="module" crossorigin src="/barbershop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/barbershop/assets/index-16KIOl_X.css">
+    <link rel="stylesheet" crossorigin href="/barbershop/assets/index-Bb2af-Cm.css">
   </head>
   <body>
     <header class="header">
@@ -77,10 +77,38 @@
     <div class="about-photos">
       <ul class="about-photos-list">
         <li class="about-photos-item">
-          <img class="about-photos-img" src="" alt="" />
+          <picture class="about-img">
+            <source
+              srcset="../img/about/about1-1x-desktop.jpg 1x, ../img/about/about1-2x-desktop.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../img/about/about1-1x-tablet.jpg 1x, ../img/about/about1-2x-tablet.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="../img/about/about1-1x-tablet.jpg 1x,"
+              alt="About"
+              style="max-width: 100%; height: auto"
+            />
+          </picture>
         </li>
         <li class="about-photos-item">
-          <img class="about-photos-img" src="" alt="" />
+          <picture class="about-img">
+            <source
+              srcset="../img/about/about2-1x-desktop.jpg 1x, ../img/about/about2-2x-desktop.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../img/about/about2-1x-tablet.jpg 1x, ../img/about/about2-2x-tablet.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="../img/about/about2-1x-tablet.jpg 1x,"
+              alt="About"
+              style="max-width: 100%; height: auto"
+            />
+          </picture>
         </li>
       </ul>
     </div>
