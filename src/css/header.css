@@ -33,6 +33,13 @@
   display: none;
 }
 
+/* MOB_MENU */
+
+.mob-menu-btn {
+  background-color: transparent;
+  border: none;
+}
+
 /* TABLET */
 
 @media only screen and (min-width: 768px) {
