@@ -1,3 +1,8 @@
+.about > .container {
+  max-width: 418px;
+  width: 100%;
+}
+
 .about {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -6,8 +11,7 @@
   padding-right: 30px;
   justify-content: center;
 }
-.container {
-}
+
 .about-container {
   display: flex;
   justify-content: center;
@@ -107,7 +111,9 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  .about-container {
+  .about > .container {
+    max-width: 690px;
+    width: 100%;
     display: flex;
     gap: 30px;
   }
@@ -147,6 +153,11 @@
 /* DESKTOP */
 
 @media only screen and (min-width: 1200px) {
+  .about > .container {
+    max-width: 1170px;
+    width: 100%;
+  }
+
   .about {
     padding-top: 120px;
     padding-bottom: 120px;
