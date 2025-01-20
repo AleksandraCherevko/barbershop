@@ -154,10 +154,6 @@
   }
 
   @media only screen and (min-width: 1200px) {
-    .wrap {
-      display: flex;
-    }
-
     .contacts-section {
       background-color: rgba(25, 28, 38, 1);
       background-image: linear-gradient(
