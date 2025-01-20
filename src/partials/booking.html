@@ -3,31 +3,29 @@
     <div class="booking">
       <h2 class="booking-title">Online-booking</h2>
       <form class="form" name="issue_report_form" autocomplete="off">
-        <label class="form-label" for="username">
-      <div class="form-wrap">
-              <input
-                id="username"
-                autofocus
-                class="form-input"
-                type="text"
-                name="username"
-                placeholder="Name*"
-                aria-label="Enter your name"
-              />
-            </label>
-    
+        <div class="form-wrap">
+          <label class="form-label" for="username">
             <input
-              class="form-input"
-              type="tel"
-              name="phonenumber"
-              placeholder="Phone*"
-              aria-label="Enter your phone number"
+              id="username"
+              class="form-input form-input-tablet"
+              type="text"
+              name="username"
+              placeholder="Name*"
+              aria-label="Enter your name"
             />
-      </div>
+          </label>
+
+          <input
+            class="form-input form-input-tablet"
+            type="tel"
+            name="phonenumber"
+            placeholder="Phone*"
+            aria-label="Enter your phone number"
+          />
+        </div>
 
         <label class="form-label">
           <textarea
-            autofocus
             class="form-input"
             name="description"
             placeholder="Message"

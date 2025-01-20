@@ -1,0 +1,184 @@
+.contacts-section {
+  background-color: rgba(25, 28, 38, 1);
+  background-image: linear-gradient(
+      to right,
+      rgba(25, 28, 38, 0.8),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(../img/contacts/contacts-mob-1x.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.8),
+        rgba(25, 28, 38, 0.8)
+      ),
+      url(../img/contacts/contacts-mob-2x.jpg);
+  }
+}
+
+.contacts-section > .container {
+  max-width: 418px;
+  width: 100%;
+}
+.contacts-section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.booking-contacts-title {
+  margin-bottom: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.17px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.booking-contacts {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(157, 164, 189, 1);
+}
+
+.booking-email {
+  text-decoration: underline;
+}
+.booking-contacts-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.schedulle-contacts-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.schedulle-contacts-title::before {
+  content: '';
+
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.booking-contacts-schedulle {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(157, 164, 189, 1);
+}
+
+.schedulle-wrap {
+  margin-top: 44px;
+}
+
+.booking-icon {
+  stroke: rgba(157, 164, 189, 1);
+  background-color: transparent;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+  .contacts-section > .container {
+    max-width: 609px;
+    width: 100%;
+  }
+  .contacts-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts-tablet-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .schedulle-wrap {
+    margin-top: 0;
+  }
+
+  .booking-contacts-title {
+    text-align: left;
+  }
+
+  .contacts-section {
+    background-color: rgba(25, 28, 38, 1);
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.8),
+        rgba(25, 28, 38, 0.8)
+      ),
+      url(../img/contacts/contacts-tablet-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(25, 28, 38, 0.8),
+          rgba(25, 28, 38, 0.8)
+        ),
+        url(../img/contacts/contacts-tablet-2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .wrap {
+      display: flex;
+    }
+
+    .contacts-section {
+      background-color: rgba(25, 28, 38, 1);
+      background-image: linear-gradient(
+          to right,
+          rgba(25, 28, 38, 0.8),
+          rgba(25, 28, 38, 0.8)
+        ),
+        url(../img/contacts/contacts-desktop-1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .contacts-section {
+        background-image: linear-gradient(
+            to right,
+            rgba(25, 28, 38, 0.8),
+            rgba(25, 28, 38, 0.8)
+          ),
+          url(../img/contacts/contacts-desktop-2x.jpg);
+      }
+    }
+  }
+}

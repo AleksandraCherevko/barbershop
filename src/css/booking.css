@@ -97,6 +97,10 @@
     margin: 0;
   }
 
+  .form-input-tablet {
+    width: 330px;
+  }
+
   /* DESKTOP */
   @media only screen and (min-width: 1200px) {
     .booking-section > .container {
@@ -109,6 +113,10 @@
     }
     .wrap {
       display: flex;
+    }
+
+    .form-input-tablet {
+      width: 270px;
     }
   }
 }
