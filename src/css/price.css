@@ -1,5 +1,5 @@
 .price > .container {
-  max-width: 480px;
+  max-width: 418px;
   width: 100%;
 }
 
@@ -73,7 +73,7 @@
   padding-bottom: 30px;
   padding-left: 44px;
   padding-right: 44px;
-  min-width: 418px;
+  min-width: 358px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,7 +89,7 @@
   padding: 0;
   margin: 0;
   flex: 1;
-  min-width: 418px;
+  min-width: 358px;
 }
 
 .price-item {
@@ -182,8 +182,24 @@
     display: flex;
     justify-content: flex-start;
   }
-}
 
+  .price-wrap {
+    /* margin-bottom: 44px;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+    /* padding-left: 44px;
+    padding-right: 44px; */
+    min-width: 358px;
+  }
+
+  .price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 418px;
+  }
+}
 /* DESKTOP */
 @media only screen and (min-width: 1200px) {
   .price > .container {

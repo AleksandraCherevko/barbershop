@@ -1,21 +1,17 @@
 .about > .container {
   max-width: 418px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .about {
   padding-top: 84px;
   padding-bottom: 84px;
   display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
   justify-content: center;
 }
 
-.about-container {
-  display: flex;
-  justify-content: center;
-}
 .about-photos {
   display: none;
 }
