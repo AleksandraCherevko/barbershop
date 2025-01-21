@@ -39,7 +39,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   font-weight: 700;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -152,29 +152,37 @@
         url(../img/contacts/contacts-tablet-2x.jpg);
     }
   }
+}
+/* DESCTOP */
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .contacts-section {
+    background-color: rgba(25, 28, 38, 1);
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.6),
+        rgba(25, 28, 38, 0.6)
+      ),
+      url(../img/contacts/contacts-desktop-1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .contacts-section {
-      background-color: rgba(25, 28, 38, 1);
       background-image: linear-gradient(
           to right,
-          rgba(25, 28, 38, 0.8),
-          rgba(25, 28, 38, 0.8)
+          rgba(25, 28, 38, 0.6),
+          rgba(25, 28, 38, 0.6)
         ),
-        url(../img/contacts/contacts-desktop-1x.jpg);
+        url(../img/contacts/contacts-desktop-2x.png);
     }
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .contacts-section {
-        background-image: linear-gradient(
-            to right,
-            rgba(25, 28, 38, 0.8),
-            rgba(25, 28, 38, 0.8)
-          ),
-          url(../img/contacts/contacts-desktop-2x.jpg);
-      }
-    }
+  .contacts-section {
+    display: flex;
+
+    padding-top: 130px;
+    padding-bottom: 120px;
   }
 }
